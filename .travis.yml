@@ -11,3 +11,7 @@ install:
 
 after_success:
   - firebase deploy --token $FIREBASE_TOKEN
+
+branches:
+  only:
+    - master
